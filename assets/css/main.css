@@ -1,0 +1,416 @@
+/* ==============================================
+
+Template: Share Buttons
+Version: 1.1
+Author:	Mykola Ostafiychuk
+
+    - General Setting
+    - Buttons Style
+
+================================================ */
+
+/* ------------------
+    General Setting
+--------------------*/
+
+html {
+    height: auto;
+}
+
+body {
+    font: 14px/20px Arial, 'Open Sans', sans-serif;
+    color: #404040;
+    background-color: #f1f1f1;
+}
+
+.container {
+    margin: 40px auto;
+    width: 960px;
+    text-align: center;
+}
+
+.mblock {
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #E4E4E4;
+}
+
+.logo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.copyright {
+    color: #888888;
+    font-size: 14px;
+    margin: 10px 0 40px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container h1 {
+    line-height: 46px;
+    font-size: 46px;
+    color: #3c5b77;
+}
+
+@media only screen and (max-width: 980px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* ------------------
+    Buttons Style
+--------------------*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 13px;
+    padding-top: 40px;
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn.hblock {
+    width: 60px;
+}
+
+.btn.hblock .btn-action {
+    line-height: 21px;
+    padding-bottom: 8px;
+}
+
+.btn.hblock .btn-action i {
+    margin: 5px 0 0;
+    display: block;
+}
+
+.btn.hblock .btn-count {
+    font-size: 16px;
+}
+
+.btn.hsblock {
+    width: 60px;
+    padding-top: 34px;
+}
+
+.btn.hsblock .btn-action {
+    line-height: 24px;
+    padding: 2px 0 8px;
+    font-size: 12px;
+}
+
+.btn.hsblock .btn-action i {
+    margin: 5px 0 0;
+    display: block;
+}
+
+.btn.hsblock .btn-count {
+    font-size: 14px;
+    line-height: 33px;
+}
+
+.btn:active {
+    margin-top: 3px;
+}
+
+.btn:active .btn-action {
+    padding-bottom: 3px;
+    -webkit-box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -3px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active .btn-action:after {
+    bottom: 3px;
+}
+
+.btn-action i {
+    margin-right: 5px;
+}
+
+.btn-count {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: Helvetica, Arial sans-serif;
+    line-height: 40px;
+    font-size: 18px;
+    color: #555;
+    text-shadow: 0 1px white;
+    background: #FAFDFF;
+    border-width: 1px 1px 0;
+    border-style: solid;
+    border-color: #c5c5c5 #bbb;
+    border-radius: 8px 8px 0 0;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.03), transparent 40%);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.03), transparent 40%);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.03), transparent 40%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.03), transparent 40%);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.18), 0 2px rgba(0, 0, 0, 0.07);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.18), 0 2px rgba(0, 0, 0, 0.07);
+}
+
+.btn-count:before, .btn-count:after {
+    content: '';
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    margin-left: -6px;
+    border: 6px solid transparent;
+    border-top-color: #FAFDFF;
+}
+
+.btn-count:before {
+    margin-left: -7px;
+    margin-top: 1px;
+    border-width: 7px;
+    border-top-color: rgba(0, 0, 0, 0.07);
+}
+
+.btn-action {
+    display: block;
+    position: relative;
+    line-height: 32px;
+    padding: 2px 0 6px;
+    font-size: 12px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    border: solid rgba(0, 0, 0, 0.18);
+    border-width: 0 1px;
+    border-radius: 0 0 8px 8px;
+}
+
+.btn-action:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: inset 0 -1px 2px rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0 -1px 2px rgba(255, 255, 255, 0.25);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn-action:hover:after {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Button Twitter */
+.btn-twitter {
+    background: #2faffa;
+    background-image: -webkit-linear-gradient(top, #2faffa, #2994da);
+    background-image: -moz-linear-gradient(top, #2faffa, #2994da);
+    background-image: -o-linear-gradient(top, #2faffa, #2994da);
+    background-image: linear-gradient(to bottom, #2faffa, #2994da);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.16), inset 0 -1px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.16), inset 0 -1px rgba(0, 0, 0, 0.15);
+}
+
+.btn-twitter:after {
+    -webkit-box-shadow: inset 0 -1px 2px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 -1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.btn-twitter + .btn-count {
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.12), 0 2px rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.12), 0 2px rgba(0, 0, 0, 0.04);
+}
+
+.btn-twitter + .btn-count:before {
+    border-top-color: rgba(0, 0, 0, 0.05);
+}
+
+/* /Button Twitter */
+
+/* Button Facebook */
+.btn-like {
+    background: #6480bd;
+    background-image: -webkit-linear-gradient(top, #6480bd, #3c5894);
+    background-image: -moz-linear-gradient(top, #6480bd, #3c5894);
+    background-image: -o-linear-gradient(top, #6480bd, #3c5894);
+    background-image: linear-gradient(to bottom, #6480bd, #3c5894);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.15), inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+
+/* /Button Facebook */
+
+/* Button Gplus */
+.btn-plus {
+    background: #626262;
+    background-image: -webkit-linear-gradient(top, #626262, #404040);
+    background-image: -moz-linear-gradient(top, #626262, #404040);
+    background-image: -o-linear-gradient(top, #626262, #404040);
+    background-image: linear-gradient(to bottom, #626262, #404040);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Gplus */
+
+/* Button Youtube */
+.btn-youtube {
+    background: #ee3e3e;
+    background-image: -webkit-linear-gradient(top, #ee3e3e, #c22126);
+    background-image: -moz-linear-gradient(top, #ee3e3e, #c22126);
+    background-image: -o-linear-gradient(top, #ee3e3e, #c22126);
+    background-image: linear-gradient(to bottom, #ee3e3e, #c22126);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Youtube */
+
+/* Button Vk */
+.btn-vk {
+    background: #6295c4;
+    background-image: -webkit-linear-gradient(top, #6295c4, #0d497d);
+    background-image: -moz-linear-gradient(top, #6295c4, #0d497d);
+    background-image: -o-linear-gradient(top, #6295c4, #0d497d);
+    background-image: linear-gradient(to bottom, #6295c4, #0d497d);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Vk */
+
+/* Button Email */
+.btn-email {
+    background: #62C4BD;
+    background-image: -webkit-linear-gradient(top, #62C4BD, #0D677D);
+    background-image: -moz-linear-gradient(top, #62C4BD, #0D677D);
+    background-image: -o-linear-gradient(top, #62C4BD, #0D677D);
+    background-image: linear-gradient(to bottom, #62C4BD, #0D677D);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Email */
+
+/* Button Pinterest */
+.btn-pinterest {
+    background: #e6252e;
+    background-image: -webkit-linear-gradient(top, #e6252e, #7c0103);
+    background-image: -moz-linear-gradient(top, #e6252e, #7c0103);
+    background-image: -o-linear-gradient(top, #e6252e, #7c0103);
+    background-image: linear-gradient(to bottom, #e6252e, #7c0103);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Pinterest */
+
+/* Button Dropbox */
+.btn-dropbox {
+    background: #007ee5;
+    background-image: -webkit-linear-gradient(top, #007ee5, #005BAA);
+    background-image: -moz-linear-gradient(top, #007ee5, #005BAA);
+    background-image: -o-linear-gradient(top, #007ee5, #005BAA);
+    background-image: linear-gradient(to bottom, #007ee5, #005BAA);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Dropbox */
+
+/* Button Yelp */
+.btn-yelp {
+    background: #ec6552;
+    background-image: -webkit-linear-gradient(top, #ec6552, #cb1416);
+    background-image: -moz-linear-gradient(top, #ec6552, #cb1416);
+    background-image: -o-linear-gradient(top, #ec6552, #cb1416);
+    background-image: linear-gradient(to bottom, #ec6552, #cb1416);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+/* /Button Yelp */
+
+/* Button Paypal */
+.btn-paypal {
+    background: #00669a;
+    background-image: -webkit-linear-gradient(top, #00669a, #00386f);
+    background-image: -moz-linear-gradient(top, #00669a, #00386f);
+    background-image: -o-linear-gradient(top, #00669a, #00386f);
+    background-image: linear-gradient(to bottom, #00669a, #00386f);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Paypal */
+
+/* Button Rss */
+.btn-rss {
+    background: #fbc04f;
+    background-image: -webkit-linear-gradient(top, #fbc04f, #e25115);
+    background-image: -moz-linear-gradient(top, #fbc04f, #e25115);
+    background-image: -o-linear-gradient(top, #fbc04f, #e25115);
+    background-image: linear-gradient(to bottom, #fbc04f, #e25115);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Rss */
+
+/* Button Flickr */
+.btn-flickr {
+    background: #ff5db0;
+    background-image: -webkit-linear-gradient(top, #ff5db0, #ff0084);
+    background-image: -moz-linear-gradient(top, #ff5db0, #ff0084);
+    background-image: -o-linear-gradient(top, #ff5db0, #ff0084);
+    background-image: linear-gradient(to bottom, #ff5db0, #ff0084);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Flickr */
+
+/* Button Weibo */
+.btn-weibo {
+    background: #d52b2a;
+    background-image: -webkit-linear-gradient(top, #d52b2a, #d52b2a);
+    background-image: -moz-linear-gradient(top, #d52b2a, #d52b2a);
+    background-image: -o-linear-gradient(top, #d52b2a, #d52b2a);
+    background-image: linear-gradient(to bottom, #d52b2a, #d52b2a);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Weibo */
+
+/* Button Vimeo */
+.btn-vimeo {
+    background: #58b2c8;
+    background-image: -webkit-linear-gradient(top, #58b2c8, #0f5169);
+    background-image: -moz-linear-gradient(top, #58b2c8, #0f5169);
+    background-image: -o-linear-gradient(top, #58b2c8, #0f5169);
+    background-image: linear-gradient(to bottom, #58b2c8, #0f5169);
+    -webkit-box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -6px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.3);
+}
+
+/* /Button Vimeo */
